@@ -9,7 +9,10 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(black,grey);
+    /*background: linear-gradient(black,grey);*/
+    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-position: center;
+    background-size: cover;
     font-family:cursive;
     color: whitesmoke;
 }
