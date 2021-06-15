@@ -50,5 +50,3 @@ window.addEventListener("load", () => {
     });
   }
 });
-
-
