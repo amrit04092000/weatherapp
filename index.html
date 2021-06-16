@@ -15,18 +15,20 @@
         <h1>Search City Weather</h1>
         <input  type="text" id="search">
         <!-- <button id="searching" >Search</button> -->
-        <button onclick = "cityTemp()">Search</button>
+        <button id= "submit" onclick = "cityTemp()">Search</button>
     </div>
    <div class="location">
        <h1 class="location-timezone">Timezone</h1>
+       <div class="iconDescGroup">
         <img id="wicon" src="" alt="Weather icon">
+        <div class="temperature-discription"></div>
+       </div>
    </div> 
    <div class="temperature">
        <div class="degree-section">
             <h2 class="temperature-degree">32</h2>
             <span>C</span>
         </div>
-       <div class="temperature-discription">Its too cold</div>
    </div>
  
     

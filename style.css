@@ -10,10 +10,11 @@ body{
     flex-direction: column;
     align-items: center;
     /*background: linear-gradient(black,grey);*/
-    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-image: url('https://source.unsplash.com/800x800/?delhi,weather');
     background-position: center;
     background-size: cover;
     font-family:cursive;
+    -webkit-text-stroke: 2px black;
     color: whitesmoke;
 }
 .location,
@@ -43,4 +44,21 @@ body{
     height: 20vh;
     width: 20vh;
     display: flex;
+}
+
+input {
+    width: 50vw;
+    padding: 10px;
+    background-color: #3CBC8D;
+    color: white;
+}
+.iconDescGroup{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature-discription{
+    font-size: 2em;
 }
