@@ -5,16 +5,13 @@ function cityTemp() {
   );
   let temperatureDegree = document.querySelector(".temperature-degree");
   let locationTimezone = document.querySelector(".location-timezone");
-  let temperatureSection = document.querySelector(".temperature");
   let temperatureSpan = document.querySelector(".temperature span");
+  let temperatureSection = document.querySelector(".temperature");
   let cityName = document.getElementById("search").value;
   let changeBG = document.body;
-  let input = document.getElementById("search");
+  let input = document.getElementById("input");
   console.log(cityName);
 
-  let urlx = `https://source.unsplash.com/800x800/?${cityName},weather`;
-  console.log(urlx);
-  changeBG.style.backgroundImage =`url(${urlx})`;
 
   
   const api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=4d9ffb85fec653fe8e30f3a4ed0c5b20`;
@@ -49,16 +46,19 @@ function cityTemp() {
         }
       });
     });
-   
+   let imageShow = temperatureDiscription.textContent
+  let urlx = `https://source.unsplash.com/800x800/?${imageShow}`;
+  console.log(urlx);
+  changeBG.style.backgroundImage =`url(${urlx})`;
 
-    input.addEventListener("keyup", function(event) {
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.key === 13) {
-        // Cancel the default action, if needed
-        event.preventDefault();
-        // Trigger the button element with a click
-        document.getElementById("submit").click();
-      }
-    });
+    // input.addEventListener("keyup", function(event) {
+    //   // Number 13 is the "Enter" key on the keyboard
+    //   if (event.key === 13) {
+    //     // Cancel the default action, if needed
+    //     event.preventDefault();
+    //     // Trigger the button element with a click
+    //     document.getElementById("submit").click();
+    //   }
+    // });
       
 }

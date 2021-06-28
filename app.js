@@ -45,6 +45,10 @@ window.addEventListener("load", () => {
               temperatureSpan.textContent = "C";
               temperatureDegree.textContent = temp;
             }
+            let imageShow = temperatureDiscription.textContent
+            let urlx = `https://source.unsplash.com/800x800/?${imageShow}`;
+            console.log(urlx);
+            changeBG.style.backgroundImage =`url(${urlx})`;
           });
         });
     });
